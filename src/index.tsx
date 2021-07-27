@@ -1,10 +1,4 @@
-import * as React from 'react'
-import styles from './styles.module.css'
-
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: 1{text}</div>
-}
+export * from "./components/Container/Container"
+export * from "./components/Button/Button"
+export * from "./util/function"
+export * from "./util/theme"

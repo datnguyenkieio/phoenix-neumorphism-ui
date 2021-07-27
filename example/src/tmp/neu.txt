@@ -1,0 +1,63 @@
+<Container className="neu">
+             <div
+                style={{
+                    height: '100vh',
+                    display: 'flex',
+                    justifyContent: 'space-evenly',
+                    alignItems: 'flex-start',
+                    flexDirection:"column",
+                    marginRight:"0.5rem",
+                    
+                }}
+            >
+                <NeuButton size="small" onClick={onClick}>Click</NeuButton>
+                <NeuButton size="small" startIcon={<AiFillAccountBook/>}></NeuButton>
+                <NeuButton size="small" ><DiAndroid/></NeuButton>
+                <NeuButton size="small"  startIcon={<DiReact/>}>React</NeuButton>
+                <NeuButton size="small"  endIcon={<DiAndroid/>} >Android</NeuButton>
+                <NeuButton size="small"  endIcon={<DiCss3Full/>}></NeuButton>
+                <NeuButton size="small" startIcon={<DiReact/>} endIcon={<DiCss3Full/>}></NeuButton>
+                <ButtonIcon size="small" ><AiFillAccountBook/></ButtonIcon>
+                <ButtonIcon size="small"  shape="rounded"><DiAngularSimple/></ButtonIcon>
+            </div>
+            <div
+                style={{
+                    height: '100vh',
+                    display: 'flex',
+                    justifyContent: 'space-evenly',
+                    alignItems: 'flex-start',
+                    flexDirection:"column",
+                    marginRight:"0.5rem"
+                    
+                }}
+            >
+                <NeuButton onClick={onClick}>Click</NeuButton>
+                <NeuButton startIcon={<AiFillAccountBook/>}></NeuButton>
+                <NeuButton><DiAndroid/></NeuButton>
+                <NeuButton startIcon={<DiReact/>}>React</NeuButton>
+                <NeuButton endIcon={<DiAndroid/>} >Android</NeuButton>
+                <NeuButton endIcon={<DiCss3Full/>}></NeuButton>
+                <NeuButton startIcon={<DiReact/>} endIcon={<DiCss3Full/>}></NeuButton>
+                <ButtonIcon><AiFillAccountBook/></ButtonIcon>
+                <ButtonIcon shape="rounded"><DiAngularSimple/></ButtonIcon>
+            </div>
+            <div
+                style={{
+                    height: '100vh',
+                    display: 'flex',
+                    justifyContent: 'space-evenly',
+                    alignItems: 'flex-start',
+                    flexDirection:"column",
+                }}
+            >
+                <NeuButton size="large" onClick={onClick}>Click</NeuButton>
+                <NeuButton size="large" startIcon={<AiFillAccountBook/>}></NeuButton>
+                <NeuButton size="large" ><DiAndroid/></NeuButton>
+                <NeuButton size="large"  startIcon={<DiReact/>}>React</NeuButton>
+                <NeuButton size="large"  endIcon={<DiAndroid/>} >Android</NeuButton>
+                <NeuButton size="large"  endIcon={<DiCss3Full/>}></NeuButton>
+                <NeuButton size="large" startIcon={<DiReact/>} endIcon={<DiCss3Full/>}></NeuButton>
+                <ButtonIcon size="large" ><AiFillAccountBook/></ButtonIcon>
+                <ButtonIcon size="large"  shape="rounded"><DiAngularSimple/></ButtonIcon>
+            </div>
+        </Container>
