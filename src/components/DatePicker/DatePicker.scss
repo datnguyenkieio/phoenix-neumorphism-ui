@@ -1,0 +1,78 @@
+
+.phoenix-neumorphism-datepicker-warpper {
+    float: left;
+    position: relative;
+}
+.phoenix-neumorphism-datepicker-warpper * {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently */  
+}
+
+// .phoenix-neumorphism-datepicker-input{
+//     float: left;
+//     width: 150px;
+//     height: 35px;
+//     overflow: hidden;
+//     border-radius: 20px;
+// }
+// .phoenix-neumorphism-datepicker-input input:focus{
+//     outline: none;
+// }
+// .phoenix-neumorphism-datepicker-input input{
+//     width: 125%;
+//     background: #f5f5f5;
+//     border: none;
+//     height: 35px;
+//     text-align: center;
+//     text-transform: uppercase;
+//     letter-spacing: 2px;
+//     font-size: 11px;
+//     cursor: pointer;
+// }
+
+
+
+.phoenix-neumorphism-datepicker-warpper{
+    .phoenix-neumorphism-datepicker-calendar-position{
+        z-index: 1;
+        position: absolute;
+        // &.phoenix-neumorphism-datepicker-calendar-position-bottom{
+        //     left:0;
+        //     top:0;
+        //     transform: translateY(100%);
+        //     &.phoenix-neumorphism-datepicker-calendar{}
+        // }
+        // &.phoenix-neumorphism-datepicker-calendar-position-top{
+        //     left:0;
+        //     top: 3.5rem;
+        // }
+        // &.phoenix-neumorphism-datepicker-calendar-position-left{
+        //     left:0;
+        //     top: 3.5rem;
+        // }
+        // &.phoenix-neumorphism-datepicker-calendar-position-right{
+        //     left:0;
+        //     top: 3.5rem;
+        // }
+        // &.phoenix-neumorphism-datepicker-calendar-position-top-left{
+        //     left:0;
+        //     top: 3.5rem;
+        // }
+        // &.phoenix-neumorphism-datepicker-calendar-position-top-right{
+        //     left:0;
+        //     top: 3.5rem;
+        // }
+        // &.phoenix-neumorphism-datepicker-calendar-position-bottom-left{
+        //     left:0;
+        //     top: 3.5rem;
+        // }
+        // &.phoenix-neumorphism-datepicker-calendar-position-bottom-right{
+        //     left:0;
+        //     top: 3.5rem;
+        // }
+    }
+}

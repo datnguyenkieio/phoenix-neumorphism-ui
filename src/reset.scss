@@ -1,0 +1,27 @@
+:root {
+	// --light-color-main:#F0F0F3;//#f3f0f1, #f0f2f5, #F0F0F3
+	// --color-primary: #1D1C1A;
+	--background-color: #f0f0f3;
+	--color-primary: #1d1c1a;
+	--box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.8),
+		3px 3px 5px rgba(0, 0, 0, 0.2);
+	--box-shadow-inset: inset -3px -3px 5px rgba(255, 255, 255, 0.8),
+		inset 3px 3px 5px rgba(0, 0, 0, 0.2);
+	--border-radius: 10px;
+	--font-size-small: 0.9rem;
+	--font-size-medium: 1rem;
+	--font-size-large: 1.1rem;
+}
+
+@font-face {
+	font-family: 'NunitoSans';
+	src: url(./fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+}
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: NunitoSans, sans-serif;
+}

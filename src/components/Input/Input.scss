@@ -1,0 +1,118 @@
+.phoenix-neumorphism-input-outside-warpper {
+	background-color: var(--background-color);
+	border-radius: var(--border-radius);
+	display: flex;
+	.phoenix-neumorphism-input-prefix-outside,
+	.phoenix-neumorphism-input-suffix-outside {
+		box-shadow: var(--box-shadow);
+		padding: 0 0.5rem;
+		font-size: 0.9rem;
+		line-height: 1.75;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-top-left-radius: var(--border-radius);
+		border-bottom-left-radius: var(--border-radius);
+	}
+
+	&.phoenix-neumorphism-input-small {
+        height: 2.5rem;
+		.phoenix-neumorphism-input-inside-warpper {
+			padding: 3px 15px;
+			.phoenix-neumorphism-input {
+				font-size: 0.9rem;
+			}
+			.phoenix-neumorphism-input-prefix-inside,
+			.phoenix-neumorphism-input-suffix-inside {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 0.9rem;
+				top: 0.5px;
+				svg {
+					top: 0;
+					font-size: 1.25rem;
+				}
+			}
+		}
+	}
+	&.phoenix-neumorphism-input-medium {
+        height: 3rem;
+		.phoenix-neumorphism-input-inside-warpper {
+			padding: 5px 15px;
+			.phoenix-neumorphism-input {
+				font-size: 1rem;
+			}
+			.phoenix-neumorphism-input-prefix-inside,
+			.phoenix-neumorphism-input-suffix-inside {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 1rem;
+				svg {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+	&.phoenix-neumorphism-input-large {
+        height: 3.5rem;
+		.phoenix-neumorphism-input-inside-warpper {
+			padding: 8px 15px;
+			.phoenix-neumorphism-input {
+				font-size: 1.1rem;
+			}
+			.phoenix-neumorphism-input-prefix-inside,
+			.phoenix-neumorphism-input-suffix-inside {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 1.1rem;
+				svg {
+					font-size: 1.75rem;
+				}
+			}
+		}
+	}
+
+	.phoenix-neumorphism-input-inside-warpper {
+		width: 100%;
+		min-width: 0;
+		line-height: 1.75;
+		border: none;
+		display: inline-flex;
+		box-shadow: var(--box-shadow-inset);
+		transition: all 0.25s ease;
+		.phoenix-neumorphism-input-prefix-inside,
+		.phoenix-neumorphism-input-suffix-inside {
+			position: relative;
+		}
+
+		.phoenix-neumorphism-input {
+			outline: none;
+			border: none;
+			box-sizing: border-box;
+			list-style: none;
+			position: relative;
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			background-color: transparent;
+			border-radius: var(--border-radius);
+		}
+		.phoenix-neumorphism-input[type="color"] {
+			padding: 0.4rem 0;
+		}
+		.phoenix-neumorphism-input[type="date"]::-webkit-inner-spin-button,
+		.phoenix-neumorphism-input[type="date"]::-webkit-calendar-picker-indicator {
+			display: none;
+			-webkit-appearance: none;
+		}
+	
+		&.phoenix-neumorphism-input-focus {
+			// box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.8),
+			// 	inset 5px 5px 5px rgba(0, 0, 0, 0.2);
+			box-shadow: var(--box-shadow-inset-deep);
+		}
+	}
+}

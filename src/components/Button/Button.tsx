@@ -1,18 +1,7 @@
 import classNames from 'classnames'
 import React, { ReactNode } from 'react'
+import { Shape, Size } from '../../util/enum'
 import './Button.scss'
-
-enum Shape {
-	SQUARE = 'square',
-	ROUNDED = 'rounded'
-}
-
-enum Size {
-	SMALL = 'small',
-	MEDIUM = 'medium',
-	LARGE = 'large'
-}
-
 interface ButtonIconProps
 	extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	children?: React.ReactNode
@@ -53,14 +42,14 @@ export const ButtonIcon = ({
 }
 
 interface ButtonProps extends ButtonIconProps {
-	startIcon?: ReactNode
-	endIcon?: ReactNode
+	prefixIcon?: ReactNode
+	suffixIcon?: ReactNode
 }
 
 export const Button = ({
 	children,
-	startIcon,
-	endIcon,
+	prefixIcon,
+	suffixIcon,
 	size = Size.MEDIUM,
 	...props
 }: ButtonProps) => {
@@ -72,23 +61,23 @@ export const Button = ({
 			})}
 		>
 			<div className='phoenix-neumorphism-button-content'>
-				{startIcon && (
-					<span className='phoenix-neumorphism-button-start-icon'>
-						{startIcon}
+				{prefixIcon && (
+					<span className='phoenix-neumorphism-button-prefix-icon'>
+						{prefixIcon}
 					</span>
 				)}
 				{children && (
 					<span
 						className={`phoenix-neumorphism-button-text ${
-							startIcon && 'margin-left'
-						} ${endIcon && 'margin-right'}`}
+							prefixIcon && 'margin-left'
+						} ${suffixIcon && 'margin-right'}`}
 					>
 						{children}
 					</span>
 				)}
-				{endIcon && (
-					<span className='phoenix-neumorphism-button-end-icon'>
-						{endIcon}
+				{suffixIcon && (
+					<span className='phoenix-neumorphism-button-suffix-icon'>
+						{suffixIcon}
 					</span>
 				)}
 			</div>

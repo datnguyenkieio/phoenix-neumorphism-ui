@@ -1,0 +1,260 @@
+.phoenix-neumorphism-datepicker-container {
+    flex-direction:column ;
+    display: flex;
+    width: 300px;
+    min-height: 340px;
+    background: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    padding: 1rem;
+    .phoenix-neumorphism-datepicker-container-head{
+        width: 100%;
+        height: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // box-shadow: var(--box-shadow);
+        .phoenix-neumorphism-datepicker-container-head-button-group-left, .phoenix-neumorphism-datepicker-container-head-button-group-right{
+            display: flex;
+            box-shadow: var(--box-shadow);
+            // border-radius: var(--border-radius);
+            height: 100%;
+        }
+        .phoenix-neumorphism-datepicker-container-head-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            // width: 100px;
+            height: 100%;
+            // box-shadow:  var(--box-shadow-inset);;
+            .phoenix-neumorphism-datepicker-container-head-container-year{
+                float: left;
+                width: 100%;
+                height: 30px;
+                font-size: 27px;
+                color: #666;
+                font-weight: 200px;
+                text-align: center;
+            }
+            .phoenix-neumorphism-datepicker-container-head-container-month{
+                float: left;
+                width: 100%;
+                height: 15px;
+                font-size: 13px;
+                color: #666;
+                font-weight: 200px;
+                text-align: center;
+            }
+        }
+    }
+    .phoenix-neumorphism-datepicker-container-body{
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+    }    
+}
+/**
+ * Controls
+ */
+
+ .phoenix-neumorphism-datepicker-container-head-button{
+    display: flex;
+    width: 2.5rem;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius) ;
+}
+// .phoenix-neumorphism-datepicker-container-head-button-inner:hover > span{
+//     border-color: #555!important;
+// } 
+.phoenix-neumorphism-datepicker-container-head-button:hover{ 
+    cursor: pointer;
+    // background: #eee;
+    // box-shadow: var(--box-shadow-inset);
+    opacity: 0.3;
+}
+
+.phoenix-neumorphism-datepicker-container-head-button:active{ 
+    cursor: pointer;
+    // background: #eee;
+    box-shadow: var(--box-shadow-inset);
+    opacity: 1;
+}
+
+.phoenix-neumorphism-datepicker-container-head-button-inner {
+    // box-shadow: var(--box-shadow);
+    height: 100%;
+    width: 100%;
+    // border-radius: 100%;
+    line-height: 35px;
+    text-align: center;
+    position: absolute;
+    top:0;
+    left:0;
+    // border-radius: var(--border-radius);
+    // margin-left: -17px;
+    // margin-top: -17px;
+}
+
+.phoenix-neumorphism-datepicker-container-head-button-inner-right-arrows:after,
+.phoenix-neumorphism-datepicker-container-head-button-inner-left-arrows:after,
+.phoenix-neumorphism-datepicker-container-head-button-inner-right-arrow,
+.phoenix-neumorphism-datepicker-container-head-button-inner-right-arrows,
+.phoenix-neumorphism-datepicker-container-head-button-inner-left-arrow,
+.phoenix-neumorphism-datepicker-container-head-button-inner-left-arrows{
+    display: block;
+    float: left;
+    width: 6px;
+    height: 6px;
+    border-left: 2px solid #888;
+    border-bottom: 2px solid #888;
+    position: absolute;
+}
+.phoenix-neumorphism-datepicker-container-head-button-inner-right-arrow,
+.phoenix-neumorphism-datepicker-container-head-button-inner-right-arrows,
+.phoenix-neumorphism-datepicker-container-head-button-inner-left-arrow,
+.phoenix-neumorphism-datepicker-container-head-button-inner-left-arrows{
+    transform: rotate(45deg);
+    left: 50%;
+    top:50%;
+    margin-left: -2px;
+    margin-top: -4px;
+}
+.phoenix-neumorphism-datepicker-container-head-button-inner-right-arrows,
+.phoenix-neumorphism-datepicker-container-head-button-inner-right-arrow {
+    transform: rotate(225deg);
+    margin-left: -4px;
+}
+.phoenix-neumorphism-datepicker-container-head-button-inner-right-arrows:after,
+.phoenix-neumorphism-datepicker-container-head-button-inner-left-arrows:after{
+    content: '';
+}
+
+.phoenix-neumorphism-datepicker-container-head-button-inner-left-arrows{
+    margin-left: -5px;
+}
+.phoenix-neumorphism-datepicker-container-head-button-inner-right-arrows{
+    margin-left: -2px;
+}
+.phoenix-neumorphism-datepicker-container-head-button-inner-right-arrows:after,
+.phoenix-neumorphism-datepicker-container-head-button-inner-left-arrows:after{
+    left: 3px;
+    top: -5px
+}
+/**
+ *  Calendar
+ */
+ .phoenix-neumorphism-datepicker-calendar-container-month,
+ .phoenix-neumorphism-datepicker-calendar-container-head,
+ .phoenix-neumorphism-datepicker-calendar-container-head-name, 
+ .phoenix-neumorphism-datepicker-calendar-container-body,
+ .phoenix-neumorphism-datepicker-calendar-day-container-day span,
+ .phoenix-neumorphism-datepicker-calendar-day-container-day,
+ .phoenix-neumorphism-datepicker-calendar-day-container,
+ .phoenix-neumorphism-datepicker-calendar-container{
+     position: relative;
+     display: flex;
+ }
+ 
+ 
+ .phoenix-neumorphism-datepicker-calendar-container{ 
+     width: 100%;
+     height: 100%;
+     flex-direction: column;
+ }
+ 
+ .phoenix-neumorphism-datepicker-calendar-container-month{ 
+     height: 30px;
+     width: 100%;
+     font-family: Roboto;
+     font-size: 16px;
+     line-height: 30px;
+     color: #666;
+ }
+ .phoenix-neumorphism-datepicker-calendar-container-head{ 
+     height: 30px;
+     width: 100%;
+     margin: 5px 0;
+     justify-content: space-around;
+     box-shadow: var(--box-shadow-inset);
+     border-radius: var(--border-radius);
+ }
+ .phoenix-neumorphism-datepicker-calendar-container-head-name{ 
+     justify-content: center;
+     width: 100%;
+     height: 30px;
+     line-height: 30px;
+     font-weight: 700;
+     color: #666;
+     font-size: 9px;
+     text-align: center;
+ }
+ .phoenix-neumorphism-datepicker-calendar-container-body{ 
+     flex-wrap: wrap;
+     height: 12rem;
+     width: 100%;
+ }
+ .phoenix-neumorphism-datepicker-calendar-day-container{ 
+     justify-content: center;
+     align-items: center;
+     width: 14.285%;
+     height: 16.6666%;
+ }
+ .phoenix-neumorphism-datepicker-calendar-day-container-day{
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     font-size: 12px;
+     font-weight: 300;
+     color: #444;
+     text-align: center;
+ }
+ .phoenix-neumorphism-datepicker-calendar-day-container-day span{ 
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     font-size: 12px;
+     font-weight: 300;
+     color: #444;
+ }
+ 
+ .phoenix-neumorphism-datepicker-calendar-day-container-day span:hover{
+     cursor: pointer;
+     opacity: 0.3;
+ } 
+ .phoenix-neumorphism-datepicker-calendar-day-container-day span{
+     width: 1.75rem;
+     height: 1.75rem;
+     // margin-top: -15px;
+     // margin-left: -15px;
+     // left: 50%;
+     // top: 50%;
+     font-weight: 400;
+     // border-radius: 100%;
+     box-shadow: var(--box-shadow);
+     border-radius: var(--border-radius);
+     line-height: 2rem;
+ }
+ .phoenix-neumorphism-datepicker-calendar-day-container.disabled{
+     pointer-events: none;
+ }
+ 
+ .phoenix-neumorphism-datepicker-calendar-day-container.disabled .phoenix-neumorphism-datepicker-calendar-day-container-day span{
+     opacity: 0.3;
+ }
+ // .phoenix-neumorphism-datepicker-calendar-day-container.disabled .phoenix-neumorphism-datepicker-calendar-day-container-day span{
+ //     background: #fff!important;
+ // }
+ .phoenix-neumorphism-datepicker-calendar-day-container.highlight .phoenix-neumorphism-datepicker-calendar-day-container-day span{
+     opacity: 0.5;
+     box-shadow: var(--box-shadow-inset-deep);
+ }
+ .phoenix-neumorphism-datepicker-calendar-day-container.highlight-green .phoenix-neumorphism-datepicker-calendar-day-container-day span{
+     box-shadow: var(--box-shadow-inset);
+ 
+ }
